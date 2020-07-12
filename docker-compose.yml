@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  backend_1:
+    container_name: backend_1
+    build:
+      context: .
+      dockerfile: 'Dockerfile.node'
+    ports:
+      - '3000:3000'
+    environment:
+      PORT: 3000
+
+  backend_2:
+    container_name: backend_2
+    build:
+      context: .
+      dockerfile: 'Dockerfile.node'
+    ports:
+      - '3001:3001'
+    environment:
+      PORT: 3001
+
+  nginx:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: 'Dockerfile.nginx'
+    ports:
+      - '8081:80'

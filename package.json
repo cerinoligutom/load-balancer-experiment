@@ -1,0 +1,27 @@
+{
+	"name": "load-balancer-experiment",
+	"version": "1.0.0",
+	"description": "For testing",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cerino-ligutom/load-balancer-experiment.git"
+	},
+	"author": {
+		"email": "zeferinix@gmail.com",
+		"name": "Cerino O. Ligutom III",
+		"url": "https://www.zeferinix.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/cerino-ligutom/load-balancer-experiment/issues"
+	},
+	"homepage": "https://github.com/cerino-ligutom/load-balancer-experiment#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	}
+}
